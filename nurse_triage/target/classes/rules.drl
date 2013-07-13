@@ -1,0 +1,18 @@
+//created on: 13 Jul, 2013
+package Rules;
+
+import Rules.RuleInput;
+import Rules.RuleOutput;
+
+rule rule1 
+when
+    ruleInput: RuleInput( oper == "10" )
+then
+    System.out.println("testing");
+    //ruleInput.setOper("kid");
+    RuleOutput o = new RuleOutput();
+    o.setResult("1");
+    //o.setResult2("2");
+    insert(o);    
+end
+
