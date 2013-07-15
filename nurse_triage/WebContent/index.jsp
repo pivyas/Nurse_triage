@@ -6,6 +6,10 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
+<link href="bootstrap/css/bootstrap.css" rel="stylesheet" media="screen">  
+       
+
+    <script src="bootstrap/js/bootstrap.min.js"></script> 
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 <script type="text/javascript">
 function lookup(inputString) {
@@ -143,13 +147,41 @@ function getVal()
 }
 </script>-->
 <script langauage= "javascript" type="text/javascript">
-function redirect(process_id,task_id)
+function redirect(int)
 {
 	window.transfer("StartWorkFlow?sno=1&process_id="+process_id+"&task_id="+task_id); 
-	}
+}
 </script>
 </head>
 <body>
+<div class="navbar">
+	<div class="navbar-inner">
+		<div class="container-fluid">
+			<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</a>
+			<a class="brand" href="index.html"> <img src="logo.png"></a>
+			
+			<div class="nav-collapse collapse">
+				<ul class="nav">
+					<li><a href="#"><i class="icon-home"></i> Home</a></li>
+					<li class="divider-vertical"></li>
+	
+				</ul>
+				<ul class="nav pull-right">
+					<li><a href="LogoutServlet">logout</a></li>
+                  	
+				</ul>
+			</div>
+			<!--/.nav-collapse -->
+		</div>
+		<!--/.container-fluid -->
+	</div>
+	<!--/.navbar-inner -->
+</div>
+<!--/.navbar -->
 <div align = "center" ><font size = "4px"><a href="LogoutServlet">Logout</a></font></div>
 <div id= "leftpanel">
 	<div id = "tasks">

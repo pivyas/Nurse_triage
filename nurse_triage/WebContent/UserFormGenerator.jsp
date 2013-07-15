@@ -8,12 +8,44 @@
     pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
-</head>
-<body>
-
+ <head>  
+    <title>Login</title>  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <!-- Bootstrap -->  
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet" media="screen">  
+       
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>  
+    <script src="bootstrap/js/bootstrap.min.js"></script> 
+  </head>  
+  <body>  
+<div class="navbar">
+	<div class="navbar-inner">
+		<div class="container-fluid">
+			<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</a>
+			<a class="brand" href="index.html"> <img src="logo.png"></a>
+			
+			<div class="nav-collapse collapse">
+				<ul class="nav">
+					<li><a href="#"><i class="icon-home"></i> Home</a></li>
+					<li class="divider-vertical"></li>
+	
+				</ul>
+				<ul class="nav pull-right">
+					<li><a href="LogoutServlet">logout</a></li>
+                  	
+				</ul>
+			</div>
+			<!--/.nav-collapse -->
+		</div>
+		<!--/.container-fluid -->
+	</div>
+	<!--/.navbar-inner -->
+</div>
+<!--/.navbar -->
 <% 
 
 /*get list*/ 
