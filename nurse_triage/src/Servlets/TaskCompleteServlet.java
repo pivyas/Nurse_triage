@@ -76,6 +76,7 @@ public class TaskCompleteServlet extends HttpServlet {
 			taskVariables.put(vname, (String) request.getParameter(name));
 		}
 		}
+		taskVariables.put("loginuser",loginuser);
 		System.out.println("variables put");
 		TaskService taskService = processEngine.getTaskService();
 		List<Task> taskList = taskService.createTaskQuery().taskId(task_id).list();

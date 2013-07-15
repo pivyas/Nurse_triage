@@ -13,5 +13,6 @@
   <mapping class="javaclasses.LoginPojo"/>
   <mapping class="javaclasses.LoginGroup"/>
   <mapping class="javaclasses.PatientPojo"/>
+  <mapping class="javaclasses.PatientRemarksPOJO"/>
     </session-factory>
 </hibernate-configuration>

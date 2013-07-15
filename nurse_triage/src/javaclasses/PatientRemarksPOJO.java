@@ -19,12 +19,12 @@ public class PatientRemarksPOJO {
 	private String patientid;
 	@Column(name="nurse_id")
 	private String nurseid;
-	@Column(name="timestamp")
+	@Column(name="time_stamp")
 	private String timestamp;
-	@Column(name="remakrs")
+	@Column(name="remarks")
 	private String remarks;
-	@Column(name="visit_id")
-	private String visitid;
+	//@Column(name="visit_id")
+	//private String visitid;
 	@Column(name="systolicBP")
 	private String systolicBP;
 	@Column(name="diastolicBP")
@@ -70,12 +70,12 @@ public class PatientRemarksPOJO {
 	public void setRemarks(String remarks) {
 		this.remarks = remarks;
 	}
-	public String getVisitid() {
+	/*public String getVisitid() {
 		return visitid;
 	}
 	public void setVisitid(String visitid) {
 		this.visitid = visitid;
-	}
+	}*/
 	public String getSystolicBP() {
 		return systolicBP;
 	}

@@ -63,7 +63,12 @@ public class RetrieveList extends HttpServlet {
 				.buildProcessEngine();
 		
 		TaskService taskService = processEngine.getTaskService();
-		List<Task> tasklist = taskService.createTaskQuery().taskCandidateGroup(group).list();
+		List<Task> tasklist = taskService.createTaskQuery().taskAssignee(userId).list();
+		
+		if (group.equals("nurse") || group.equals("manager")){
+			tasklist = taskService.createTaskQuery().taskCandidateGroup(group).list();
+		}
+		
 		if (tasklist.isEmpty())
 		{
 			System.out.println("empty hai");

@@ -150,6 +150,7 @@ function redirect(process_id,task_id)
 </script>
 </head>
 <body>
+<div align = "center" ><font size = "4px"><a href="LogoutServlet">Logout</a></font></div>
 <div id= "leftpanel">
 	<div id = "tasks">
 		<table>
@@ -178,7 +179,7 @@ function redirect(process_id,task_id)
 		<c:when test="${group=='nurse'}" >
 		Hello Nurse
 		</c:when>
-		<c:when test="${group=='management'}" >
+		<c:when test="${group=='manager'}" >
 		<form action="StartWorkFlow" method="POST">
 		<div> <h3><font color="red">Enter Patient Name</states></font></h3> <br />
 	    <input type="text" name="patientid" size="30" id="inputString" onkeyup="lookup(this.value);" onblur="fill();"/>
@@ -193,16 +194,7 @@ function redirect(process_id,task_id)
 	    </form>
 		</c:when>
 		<c:otherwise>
-		
-			<form>
-<div> <h3><font color="red">Indian States</states></font></h3> <br /> Enter India State Name to see autocomplete
-<input type="text" size="30" value="" id="inputString" onkeyup="lookup(this.value);" onblur="fill();" />
-</div>
-<div class="suggestionsBox" id="suggestions" style="display: none;">
-<div class="suggestionList" id="autoSuggestionsList">
-</div>
-</div>
-</form>
+			Doctor
 		</c:otherwise> 
 	</c:choose>
 	</div>
